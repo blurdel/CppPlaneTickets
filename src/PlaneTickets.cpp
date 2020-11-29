@@ -74,8 +74,10 @@ int main() {
 
 
 	// Using a map
+//	auto comp = [](const string& a, const string& b){ return a < b; };
 	map<string, Ticket> aMap;
 	aMap.insert(make_pair<string, Ticket>("Denver", {"Denver", "Chicago"}));
+	aMap.insert(make_pair<string, Ticket>("DC", {"DC", "NYC"}));
 	aMap.insert(make_pair<string, Ticket>("Vegas", {"Vegas", "Denver"}));
 	aMap.insert(make_pair<string, Ticket>("Chicago", {"Chicago", "DC"}));
 	aMap.insert(make_pair<string, Ticket>("San Fran", {"San Fran", "Vegas"}));
